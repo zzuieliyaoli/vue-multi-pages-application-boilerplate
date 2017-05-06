@@ -2,7 +2,34 @@
 
 > A Vue multi-pages application demo which is modified by vue-cli
 
-## Steps
+## Usage
+
+```bash
+$ git clone repo-url
+$ yarn install
+
+$ npm run dev
+
+$ npm run build
+```
+
+And open `localhost:8000/index.html` and `localhost:8000/login.html`
+
+When you want to add new page, just do like these:
+
+- create `newPage.html` to `src/`
+- create `newPage.entry.js` to `src/`
+- put `newPage.entry.js` 's path to `build/entries.js`
+
+```js
+module.exports = {
+  index: './src/index.entry.js',
+  login: './src/login.entry.js',
+  newPage: './src/newPage.entry.js',
+};
+```
+
+## Details
 
 After creating projects by `vue init webpack`,
 you'd better use these multi-pages application config showing below to replace
@@ -75,11 +102,3 @@ module.exports = {
   // ...
 };
 ```
-
-## Usage
-
-```bash
-$ npm run dev
-```
-
-And open `localhost:8000/index.html` and `localhost:8000/login.html`
