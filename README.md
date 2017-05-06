@@ -1,6 +1,5 @@
-# Vue Multi-pages Application Demo
-
-> A Vue multi-pages application demo which is modified by vue-cli
+# Vue Multi-pages Application Boilerplate
+> A Vue multi-pages application boilerplate which is based on config created by vue-cli
 
 ## Usage
 
